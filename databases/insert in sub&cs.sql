@@ -1,0 +1,11 @@
+-- INSERT INTO dim_customer (customer_id, age, gender)
+-- SELECT DISTINCT 
+--     customer_id,
+--     age,
+--     gender 
+-- FROM stagging_churn;
+-- INSERT INTO dim_subscription (subscription_type, contract_length)
+-- SELECT DISTINCT 
+--     subscription_type,
+--     contract_length 
+-- FROM stagging_churn;

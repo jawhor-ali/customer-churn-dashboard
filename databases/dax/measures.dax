@@ -1,0 +1,20 @@
+Core DAX Measures
+
+Total Customers
+
+Total Customers = COUNTROWS('public dim_customer')
+
+
+Churned Customers (Leveraging binary flag logic where 1 = churned, 0 = active)
+
+Churned Customers = SUM('public fact_customer_churn'[churn])
+
+
+Overall Churn Rate (%)
+
+Overall Churn Rate = DIVIDE([Churned Customers], [Total Customers], 0)
+
+
+Total Spend / Revenue
+
+Total Spend = SUM('public fact_customer_churn'[total_spend])
